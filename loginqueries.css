@@ -1,0 +1,21 @@
+@media (max-width: 600px) {
+  .foreffecthd {
+    top: 26.4rem;
+  }
+  .devided {
+    width: 100%;
+  }
+  .textblock {
+    width: 100%;
+    top: 20rem;
+  }
+  .imgeffect {
+    top: 90%;
+    right: 9.5rem;
+  }
+
+  .foreffect {
+    width: 90%;
+    right: 1.5rem;
+  }
+}

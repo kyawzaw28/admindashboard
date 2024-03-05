@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css">
+    <title>ABCD</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar mobile-sideBar">
+        <div class="side">
+          <div class="head">
+            <p class="logo">
+              <img
+                src="img/kenkokanri-admin-mark.png"
+                alt="company logo"
+                class="logoimage"
+              />
+            </p>
+            <p class="headtwo">
+              <img
+                src="img/kenkokanri-admin-text.png"
+                alt="logo name"
+                class="imagename"
+              />
+            </p>
+          </div>
+          <nav class="sidenav">
+            <ul>
+              <li class="sidename">
+                <a href="index.html" class="sidelink active">
+                  <p class="tabicon">
+                    <ion-icon name="grid-outline" size="small"></ion-icon>
+                  </p>
+                  <p class="tablinkname">Dashboard</p>
+                </a>
+              </li>
+              <li class="sidename checknav-width">
+                <a href="company.html" class="sidelinkcompany">
+                  <p class="tabicon">
+                    <ion-icon name="business-outline" size="small"></ion-icon>
+                  </p>
+                  <p class="tablinkname">Company</p>
+                </a>
+                <ul class="sub-company">
+                  <li class="subcomli">
+                    <a href="userlist.html" class="userlink">
+                      <p class="forline remove-sub"></p>
+                      <p class="sideuserlist rmtext">User List</p>
+                    </a>
+                  </li>
+                  <li class="subcomli">
+                    <a href="accesslog.html" class="userlink2">
+                      <p class="forline2 remove-sub2"></p>
+                      <p class="sideuserlist rmtext">Access Log</p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="sidebar-hover-pointer point">
+                  <li class="hover-li jli">
+                    <a href="company.html" class="sidebar-li-a"> Company </a>
+                  </li>
+                  <li class="hover-li">
+                    <a href="userlist.html" class="sidebar-li-aUserList">
+                      User List</a
+                    >
+                  </li>
+                  <li class="hover-li">
+                    <a href="accesslog.html" class="sidebar-li-aAccessLog">
+                      Access Log
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sidename">
+                <a href="paymentlist.html" class="sidelink2">
+                  <p class="tabicon">
+                    <ion-icon name="card-outline" size="small"></ion-icon></ion-icon>
+                  </p>
+                  <p class="tablinkname">Payment List</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="rightside">
+        <div class="topbar">
+          <div class="topleft">
+            <a href="#" class="sidebtn"
+              ><ion-icon
+                name="reorder-three-outline"
+                size="large"
+                class="topa"
+              ></ion-icon
+            ></a>
+            <a href="#" class="sidebtn2"
+            ><ion-icon
+              name="reorder-three-outline"
+              size="large"
+              class="topa"
+            ></ion-icon
+          ></a>
+            <a href="#" class="topadmin">Admin</a>
+          </div>
+          <div>
+            <ul class="torig">
+              <li class="firli">
+                test
+                <a href="#" class="bfcon"
+                  ><ion-icon
+                    name="notifications-outline"
+                    size="large"
+                    class="topa"
+                  ></ion-icon
+                ></a>
+              </li>
+              <li class="firli">
+                test
+                <a href="#" class="seta"
+                  ><ion-icon
+                    name="settings-outline"
+                    size="large"
+                    class="topa"
+                  ></ion-icon
+                ></a>
+              </li>
+              <li class="firli">
+                <a href="#" class="rimo">
+                  <p class="unnh">
+                    User Name
+                    <span class="sadmp">Admin</span>
+                  </p>
+                  <p class="pim">
+                    <img src="img/dammy1.jpg" alt="profile photo" />
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="notio" id="notii">
+          <p class="notiex">Notifications</p>
+        </div>
+        <div id="topset" class="showset">
+          <p class="adtxt">Admin Setting</p>
+          <div>
+            <ul class="setlst">
+              <li class="setit">
+                <a href="adminlist.html" class="aset">
+                  <p class="pset">
+                    <ion-icon
+                      name="people-circle-outline"
+                      size="large"
+                    ></ion-icon>
+                  </p>
+                  <p>System Admin Lists</p>
+                </a>
+              </li>
+              <li class="setit">
+                <a href="planpayment.html" class="aset">
+                  <p class="pset">
+                    <ion-icon name="documents-outline" size="large"></ion-icon>
+                  </p>
+                  <p>Plans and Payments</p>
+                </a>
+              </li>
+              <li class="setit">
+                <a href="#" class="aset">
+                  <p class="pset">
+                    <ion-icon
+                      name="color-palette-outline"
+                      size="large"
+                    ></ion-icon>
+                  </p>
+                  <p>Themes</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="adm" class="hideadm">
+          <p class="adtxt2">User Name <span class="spadm">Admin</span></p>
+          <div>
+            <ul class="setlst">
+              <li class="setit">
+                <a href="#" class="aset">
+                  <p class="pset">
+                    <ion-icon
+                      name="mail-unread-outline"
+                      size="large"
+                    ></ion-icon>
+                  </p>
+                  <p>Inbox</p>
+                </a>
+              </li>
+              <li class="setit">
+                <a href="#" class="aset">
+                  <p class="pset">
+                    <ion-icon name="person-outline" size="large"></ion-icon>
+                  </p>
+                  <p>Account</p>
+                </a>
+              </li>
+              <li class="setit">
+                <a href="login.html" class="aset">
+                  <p class="pset">
+                    <ion-icon name="log-out-outline" size="large"></ion-icon>
+                  </p>
+                  <p>Logout</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      <div class="plancontent">        
+        <div class="tablehead">
+          <div class="lefthead">
+          </div>
+          <div class="righthead">
+            <!-- <a href="companycreate.html" class="addbtnco"><ion-icon name="add-circle" size="large"></ion-icon></a> -->
+          </div>
+        </div>
+        <div class="sec-div">
+          <ul class="planthree">
+            <a href="companycreate.html" class="addbtncoPay"><ion-icon name="add-circle" size="large"></ion-icon></a>
+            <li class="subplan">
+              <p class="plan1title">PLAN 1</p>
+              <div class="inside-box">
+                <p class="absolutebox3"></p>
+                <a href="#" class="iconbox">
+                  <ion-icon name="create-outline" size="small">
+                  </ion-icon>
+                </a>
+                <p class="boxtitle">
+                  フリー<br>0円/月
+                </p>
+                <ul class="boxlist">
+                  <li class="listall">
+                    <p class="text-p">
+                      登録スタッフ数
+                    </p>
+                    <span>10</span>
+                  </li>
+                  <li class="listall">
+                    <p class="text-p">
+                      案件管理
+                    </p>
+                    <input type="checkbox" checked>
+                  </li>
+                  <li class="listall">
+                    <p class="text-p">
+                      マップ
+                    </p>
+                    <input type="checkbox">
+                  </li>                  <li class="listall">
+                    <p class="text-p">
+                      写真
+                    </p>
+                    <input type="checkbox">
+                  </li>                  <li class="listall">
+                    <p class="text-p">
+                      ユーザーマッチング
+                    </p>
+                    <input type="checkbox" checked>
+                  </li>                  <li class="listall">
+                    <p class="text-p">
+                      ユーザー受発注
+                    </p>
+                    <input type="checkbox">
+                  </li>                  <li class="listall">
+                    <p class="text-p">
+                      チャット
+                    </p>
+                    <input type="checkbox">
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="subplan">
+              <p class="plan1title">PLAN 2</p>
+              <div class="inside-box">
+                <p class="absolutebox"></p>
+                <a href="#" class="iconbox">
+                  <ion-icon name="create-outline" size="small">
+                  </ion-icon>
+                </a>
+                <p class="boxtitle">
+                  ライト<br>3,980円/月
+                </p>
+                <ul class="boxlist">
+                  <li class="listall">
+                    <p class="text-p">
+                      登録スタッフ数
+                    </p>
+                    <span>無制限</span>
+                  </li>
+                  <li class="listall">
+                    <p class="text-p">
+                      案件管理
+                    </p>
+                    <input type="checkbox" checked>
+                  </li>
+                  <li class="listall">
+                    <p class="text-p">
+                      マップ
+                    </p>
+                    <input type="checkbox" checked>
+                  </li>                  <li class="listall">
+                    <p class="text-p">
+                      写真
+                    </p>
+                    <input type="checkbox" checked>
+                  </li>                  <li class="listall">
+                    <p class="text-p">
+                      ユーザーマッチング
+                    </p>
+                    <input type="checkbox" checked>
+                  </li>                  <li class="listall">
+                    <p class="text-p">
+                      ユーザー受発注
+                    </p>
+                    <input type="checkbox">
+                  </li>                  <li class="listall">
+                    <p class="text-p">
+                      チャット
+                    </p>
+                    <input type="checkbox">
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="subplan">
+              <p class="plan1title">PLAN 3</p>
+              <div class="inside-box">
+                <p class="absolutebox2"></p>
+                <a href="#" class="iconbox">
+                  <ion-icon name="create-outline" size="small">
+                  </ion-icon>
+                </a>
+                <p class="boxtitle">
+                  スタンダード<br>8,980円/月
+                </p>
+                <ul class="boxlist">
+                  <li class="listall">
+                    <p class="text-p">
+                      登録スタッフ数
+                    </p>
+                    <span>無制限</span>
+                  </li>
+                  <li class="listall">
+                    <p class="text-p">
+                      案件管理
+                    </p>
+                    <input type="checkbox" checked>
+                  </li>
+                  <li class="listall">
+                    <p class="text-p">
+                      マップ
+                    </p>
+                    <input type="checkbox" checked>
+                  </li>                  <li class="listall">
+                    <p class="text-p">
+                      写真
+                    </p>
+                    <input type="checkbox" checked>
+                  </li>                  <li class="listall">
+                    <p class="text-p">
+                      ユーザーマッチング
+                    </p>
+                    <input type="checkbox" checked>
+                  </li>                  <li class="listall">
+                    <p class="text-p">
+                      ユーザー受発注
+                    </p>
+                    <input type="checkbox" checked>
+                  </li>                  <li class="listall">
+                    <p class="text-p">
+                      チャット
+                    </p>
+                    <input type="checkbox" checked>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+
+    </div>
+    </div>
+    <!-- <div id="comfo" class="hidefo">
+      <p class="mdf"></p>
+      <div class="fodi">
+        <p class="imasl"><ion-icon name="timer-outline" size="large"></ion-icon></p>
+        <form action="" class="fofo">
+          <ul class="foul">
+            <li class="folia">
+              <p class="folip">Register Date</p>
+              <div class="fodith">
+                <input type="text" class="foin foout">
+                <input type="text" class="foin foout">
+              </div>
+            </li>
+            <li class="folia">
+              <p class="folip">ID</p>
+
+                <input type="text" class="foin">
+            </li>
+            <li class="folia">
+              <p class="folip">Name</p>
+
+                <input type="text" class="foin">
+            </li>            <li class="folia">
+              <p class="folip">Company</p>
+
+                <input type="text" class="foin">
+            </li>            <li class="folia">
+              <p class="folip">Business Type</p>
+
+                <input type="text" class="foin">
+            </li>            <li class="folia">
+              <p class="folip">Location</p>
+
+                <input type="text" class="foin">
+            </li>            <li class="folia">
+              <p class="folip">User</p>
+
+                <input type="text" class="foin">
+            </li>            <li class="folia">
+              <p class="folip">Plan</p>
+
+                <input type="text" class="foin">
+            </li>            <li class="folia">
+              <p class="folip">Payment</p>
+
+                <input type="text" class="foin">
+            </li>
+          </ul>
+        </form>
+      </div>
+      <div class="fobu">
+        <button class="resbu">Reset</button>
+        <button class="serbu">Search</button>
+      </div>
+      <a href="#" class="clobtn">
+        <ion-icon name="close-outline" size="large"></ion-icon>
+      </a>
+    </div> -->
+    <div class="hbg"></div>
+    <script src="script.js"></script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  </body>
+</html>

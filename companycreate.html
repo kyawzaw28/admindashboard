@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css">
+    <title>ABCD</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar mobile-sideBar">
+        <div class="side">
+          <div class="head">
+            <p class="logo">
+
+            </p>
+            <p class="headtwo">
+
+            </p>
+          </div>
+          <nav class="sidenav">
+            <ul>
+              <li class="sidename">
+                <a href="index.html" class="sidelink active">
+                  <p class="tabicon">
+                    <ion-icon name="grid-outline" size="small"></ion-icon>
+                  </p>
+                  <p class="tablinkname">Dashboard</p>
+                </a>
+              </li>
+              <li class="sidename checknav-width">
+                <a href="company.html" class="sidelinkcompany">
+                  <p class="tabicon">
+                    <ion-icon name="business-outline" size="small"></ion-icon>
+                  </p>
+                  <p class="tablinkname">Company</p>
+                </a>
+                <ul class="sub-company">
+                  <li class="subcomli">
+                    <a href="userlist.html" class="userlink">
+                      <p class="forline remove-sub"></p>
+                      <p class="sideuserlist rmtext">User List</p>
+                    </a>
+                  </li>
+                  <li class="subcomli">
+                    <a href="accesslog.html" class="userlink2">
+                      <p class="forline2 remove-sub2"></p>
+                      <p class="sideuserlist rmtext">Access Log</p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="sidebar-hover-pointer point">
+                  <li class="hover-li jli">
+                    <a href="company.html" class="sidebar-li-a"> Company </a>
+                  </li>
+                  <li class="hover-li">
+                    <a href="userlist.html" class="sidebar-li-aUserList">
+                      User List</a
+                    >
+                  </li>
+                  <li class="hover-li">
+                    <a href="accesslog.html" class="sidebar-li-aAccessLog">
+                      Access Log
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sidename">
+                <a href="paymentlist.html" class="sidelink2">
+                  <p class="tabicon">
+                    <ion-icon name="card-outline" size="small"></ion-icon></ion-icon>
+                  </p>
+                  <p class="tablinkname">Payment List</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="rightside">
+        <div class="topbar">
+          <div class="topleft">
+            <a href="#" class="sidebtn"
+              ><ion-icon
+                name="reorder-three-outline"
+                size="large"
+                class="topa"
+              ></ion-icon
+            ></a>
+            <a href="#" class="sidebtn2"
+            ><ion-icon
+              name="reorder-three-outline"
+              size="large"
+              class="topa"
+            ></ion-icon
+          ></a>
+            <a href="#" class="topadmin">Admin</a>
+          </div>
+          <div>
+            <ul class="torig">
+              <li class="firli">
+                test
+                <a href="#" class="bfcon"
+                  ><ion-icon
+                    name="notifications-outline"
+                    size="large"
+                    class="topa"
+                  ></ion-icon
+                ></a>
+              </li>
+              <li class="firli">
+                test
+                <a href="#" class="seta"
+                  ><ion-icon
+                    name="settings-outline"
+                    size="large"
+                    class="topa"
+                  ></ion-icon
+                ></a>
+              </li>
+              <li class="firli">
+                <a href="#" class="rimo">
+                  <p class="unnh">
+                    User Name
+                    <span class="sadmp">Admin</span>
+                  </p>
+                  <p class="pim">
+                    <img src="img/dammy1.jpg" alt="profile photo" />
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="notio" id="notii">
+          <p class="notiex">Notifications</p>
+        </div>
+        <div id="topset" class="showset">
+          <p class="adtxt">Admin Setting</p>
+          <div>
+            <ul class="setlst">
+              <li class="setit">
+                <a href="adminlist.html" class="aset">
+                  <p class="pset">
+                    <ion-icon
+                      name="people-circle-outline"
+                      size="large"
+                    ></ion-icon>
+                  </p>
+                  <p>System Admin Lists</p>
+                </a>
+              </li>
+              <li class="setit">
+                <a href="planpayment.html" class="aset">
+                  <p class="pset">
+                    <ion-icon name="documents-outline" size="large"></ion-icon>
+                  </p>
+                  <p>Plans and Payments</p>
+                </a>
+              </li>
+              <li class="setit">
+                <a href="#" class="aset">
+                  <p class="pset">
+                    <ion-icon
+                      name="color-palette-outline"
+                      size="large"
+                    ></ion-icon>
+                  </p>
+                  <p>Themes</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="adm" class="hideadm">
+          <p class="adtxt2">User Name <span class="spadm">Admin</span></p>
+          <div>
+            <ul class="setlst">
+              <li class="setit">
+                <a href="#" class="aset">
+                  <p class="pset">
+                    <ion-icon
+                      name="mail-unread-outline"
+                      size="large"
+                    ></ion-icon>
+                  </p>
+                  <p>Inbox</p>
+                </a>
+              </li>
+              <li class="setit">
+                <a href="#" class="aset">
+                  <p class="pset">
+                    <ion-icon name="person-outline" size="large"></ion-icon>
+                  </p>
+                  <p>Account</p>
+                </a>
+              </li>
+              <li class="setit">
+                <a href="login.html" class="aset">
+                  <p class="pset">
+                    <ion-icon name="log-out-outline" size="large"></ion-icon>
+                  </p>
+                  <p>Logout</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      <div class="content">
+        <div class="dash">Company Create</div>
+        <div class="mainct">
+          <p class="imasl"><ion-icon name="podium-outline" size="large"></ion-icon></p>
+          <div class="kwtg">
+            <ul class="ffl">
+              <li class="jlkw kwfl kwsl">
+                <a href="#" class="kwa">Register Information</a>
+              </li>
+              <li class="jlkq kwfl">
+                <a href="#" class="kwatwo">Payment Information</a>
+              </li>
+            </ul>
+          </div>
+          <div class="fofdv">
+            <div class="jfos fofir fosec">
+              <form action="" class="jffo">
+                <ul class="jful">
+                  <li class="jflifir jflisec">
+                    <p class="irp">ID</p>
+                    <p class="rpp">10001</p>
+                    <a href="#"><ion-icon name="create-outline" size="large"></ion-icon></a>
+                  </li>
+                  <li class="jflifir">
+                    <p class="irp">Name</p>
+                    <input type="text" class="rpip">
+                  </li>
+                  <li class="jflifir">
+                    <p class="irp">Company</p>
+                    <input type="text" class="rpip">
+                  </li>                  <li class="jflifir">
+                    <p class="irp">Business Type</p>
+                    <input type="text" class="rpip">
+                  </li>                  <li class="jflifir">
+                    <p class="irp">Post Code</p>
+                    <input type="text" class="rpippo">
+                  </li>                  <li class="jflifir">
+                    <p class="irp">Address</p>
+                    <input type="text" class="rpippo">
+                  </li>                  <li class="jflifir">
+                    <p class="irp">Phone</p>
+                    <input type="text" class="rpip">
+                  </li>                  <li class="jflifir">
+                    <p class="irp">Fax</p>
+                    <input type="text" class="rpip">
+                  </li>
+                </ul>
+                <ul class="jfultw">
+                  <li class="jflifir jflisec">
+                    <p class="irp">Register Date</p>
+                    <p>
+                      <span class="rpsp">2020-10-14</span>16:17
+                    </p>
+                  </li>
+                </li>                  <li class="jflifir">
+                  <p class="irp">Email</p>
+                  <input type="text" class="rpip">
+                </li> </li>                  <li class="jflifir">
+                  <p class="irp">Password</p>
+                  <input type="text" class="rpip">
+                </li> 
+                  <li class="jflifir irla">
+                    <p class="irp">User Count</p>
+                    <p class="irptw">10</p>
+                    <a href="#"><ion-icon name="list-outline" size="large"></ion-icon></a>
+                  </li>
+                </ul>
+              </form>
+            </div>
+            <div class="jfos fofirTwo">
+              <form class="paymentInfoForm" style="display:flex">
+                <ul class="paymentInfo-ul">
+                  <li class="jflifir">
+                    <p class="irp">ID</p>
+                    <p class="rpp">10001</p>
+                  </li>
+                  <li class="jflifir paymentInfo-ul-liTwo">
+                    <p class="irp">Name</p>
+                    <p class="rpp">Saw Ye Thway</p>
+                  </li>
+                  <li class="jflifir paymentInfo-ul-liTwo">
+                    <p class="irp">Payment</p>
+                    <div class="paymentInfo-form-div">
+                      <p>Credit Card</p>
+                      <span class="paymentInfo-form-span">***0550 で終わる Visa</span>
+                      <p class="paymentInfo-form-p">5,600円/月<br>
+                        次のお支払い予定日は2020年5月9日です。
+                      </p>
+                    </div>
+                  </li>
+                  <li class="jflifir">
+                    <p class="irp">Plan</p>
+                    <div class="paymentInfo-form-div">
+                      <p>Credit Card</p>
+                      <p class="paymentInfo-form-pTwo">       
+													年間プラン（月々払い）<br>
+													2020年10月9日に自動更新されます。
+												
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+                <div class="paymentInfo-form-divTwo">
+                  <p class="paymentInfo-table-title">請求書・領収書</p>
+                  <div class="paymentInfo-table-div">
+                    <table class="paymentInfo-table">
+                      <thead class="paymentInfo-tableHead">
+                        <tr>
+                          <th>日付</th>
+                          <th>種類</th>
+                          <th>お支払い金額</th>
+                          <th>領収書</th>
+                        </tr>
+                      </thead>
+                      <tbody class="paymentInfo-tableBody">
+                        <tr>
+                        <td>2020年4月9日</td>
+                        <td>請求書</td>
+                        <td>6,248円</td>
+                        <td><a href="#" class="paymentInfo-td-a">PDFを表示</a></td>
+                        </tr>
+                        <tr>
+                          <td>2020年4月9日</td>
+                          <td>請求書</td>
+                          <td>6,248円</td>
+                          <td><a href="#" class="paymentInfo-td-a">PDFを表示</a></td>
+                          </tr><tr>
+                            <td>2020年4月9日</td>
+                            <td>請求書</td>
+                            <td>6,248円</td>
+                            <td><a href="#" class="paymentInfo-td-a">PDFを表示</a></td>
+                            </tr><tr>
+                              <td>2020年4月9日</td>
+                              <td>請求書</td>
+                              <td>6,248円</td>
+                              <td><a href="#" class="paymentInfo-td-a">PDFを表示</a></td>
+                              </tr><tr>
+                                <td>2020年4月9日</td>
+                                <td>請求書</td>
+                                <td>6,248円</td>
+                                <td><a href="#" class="paymentInfo-td-a">PDFを表示</a></td>
+                                </tr><tr>
+                                  <td>2020年4月9日</td>
+                                  <td>請求書</td>
+                                  <td>6,248円</td>
+                                  <td><a href="#" class="paymentInfo-td-a">PDFを表示</a></td>
+                                  </tr><tr>
+                                    <td>2020年4月9日</td>
+                                    <td>請求書</td>
+                                    <td>6,248円</td>
+                                    <td><a href="#" class="paymentInfo-td-a">PDFを表示</a></td>
+                                    </tr><tr>
+                                      <td>2020年4月9日</td>
+                                      <td>請求書</td>
+                                      <td>6,248円</td>
+                                      <td><a href="#" class="paymentInfo-td-a">PDFを表示</a></td>
+                                      </tr><tr>
+                                        <td>2020年4月9日</td>
+                                        <td>請求書</td>
+                                        <td>6,248円</td>
+                                        <td><a href="#" class="paymentInfo-td-a">PDFを表示</a></td>
+                                        </tr><tr>
+                                          <td>2020年4月9日</td>
+                                          <td>請求書</td>
+                                          <td>6,248円</td>
+                                          <td><a href="#" class="paymentInfo-td-a">PDFを表示</a></td>
+                                          </tr><tr>
+                                            <td>2020年4月9日</td>
+                                            <td>請求書</td>
+                                            <td>6,248円</td>
+                                            <td><a href="#" class="paymentInfo-td-a">PDFを表示</a></td>
+                                            </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+          </div>
+          <div class="bottom-section">
+            <button class="cancel-for-companyCreate">Cancel</button>
+            <button class="registerBtn-companyCreate">Register</button>
+          </div>          
+        </div>      
+    </div>
+    </div>
+    <div class="hbg"></div>
+   
+    <script src="script.js"></script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  </body>
+</html>

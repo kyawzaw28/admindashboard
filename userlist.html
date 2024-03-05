@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css">
+    <title>ABCD</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar mobile-sideBar">
+        <div class="side">
+          <div class="head">
+            <p class="logo">
+              <img
+                src="img/kenkokanri-admin-mark.png"
+                alt="company logo"
+                class="logoimage"
+              />
+            </p>
+            <p class="headtwo">
+              <img
+                src="img/kenkokanri-admin-text.png"
+                alt="logo name"
+                class="imagename"
+              />
+            </p>
+          </div>
+          <nav class="sidenav">
+            <ul>
+              <li class="sidename">
+                <a href="index.html" class="sidelink active">
+                  <p class="tabicon">
+                    <ion-icon name="grid-outline" size="small"></ion-icon>
+                  </p>
+                  <p class="tablinkname">Dashboard</p>
+                </a>
+              </li>
+              <li class="sidename checknav-width">
+                <a href="company.html" class="sidelinkcompany">
+                  <p class="tabicon">
+                    <ion-icon name="business-outline" size="small"></ion-icon>
+                  </p>
+                  <p class="tablinkname">Company</p>
+                </a>
+                <ul class="sub-company">
+                  <li class="subcomli">
+                    <a href="userlist.html" class="userlink">
+                      <p class="forline remove-sub"></p>
+                      <p class="sideuserlist rmtext">User List</p>
+                    </a>
+                  </li>
+                  <li class="subcomli">
+                    <a href="accesslog.html" class="userlink2">
+                      <p class="forline2 remove-sub2"></p>
+                      <p class="sideuserlist rmtext">Access Log</p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="sidebar-hover-pointer point">
+                  <li class="hover-li jli">
+                    <a href="company.html" class="sidebar-li-a"> Company </a>
+                  </li>
+                  <li class="hover-li">
+                    <a href="userlist.html" class="sidebar-li-aUserList">
+                      User List</a
+                    >
+                  </li>
+                  <li class="hover-li">
+                    <a href="accesslog.html" class="sidebar-li-aAccessLog">
+                      Access Log
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sidename">
+                <a href="paymentlist.html" class="sidelink2">
+                  <p class="tabicon">
+                    <ion-icon name="card-outline" size="small"></ion-icon></ion-icon>
+                  </p>
+                  <p class="tablinkname">Payment List</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="rightside">
+        <div class="topbar">
+          <div class="topleft">
+            <a href="#" class="sidebtn"
+              ><ion-icon
+                name="reorder-three-outline"
+                size="large"
+                class="topa"
+              ></ion-icon
+            ></a>
+            <a href="#" class="sidebtn2"
+            ><ion-icon
+              name="reorder-three-outline"
+              size="large"
+              class="topa"
+            ></ion-icon
+          ></a>
+            <a href="#" class="topadmin">Admin</a>
+          </div>
+          <div>
+            <ul class="torig">
+              <li class="firli">
+                test
+                <a href="#" class="bfcon"
+                  ><ion-icon
+                    name="notifications-outline"
+                    size="large"
+                    class="topa"
+                  ></ion-icon
+                ></a>
+              </li>
+              <li class="firli">
+                test
+                <a href="#" class="seta"
+                  ><ion-icon
+                    name="settings-outline"
+                    size="large"
+                    class="topa"
+                  ></ion-icon
+                ></a>
+              </li>
+              <li class="firli">
+                <a href="#" class="rimo">
+                  <p class="unnh">
+                    User Name
+                    <span class="sadmp">Admin</span>
+                  </p>
+                  <p class="pim">
+                    <img src="img/dammy1.jpg" alt="profile photo" />
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="notio" id="notii">
+          <p class="notiex">Notifications</p>
+        </div>
+        <div id="topset" class="showset">
+          <p class="adtxt">Admin Setting</p>
+          <div>
+            <ul class="setlst">
+              <li class="setit">
+                <a href="adminlist.html" class="aset">
+                  <p class="pset">
+                    <ion-icon
+                      name="people-circle-outline"
+                      size="large"
+                    ></ion-icon>
+                  </p>
+                  <p>System Admin Lists</p>
+                </a>
+              </li>
+              <li class="setit">
+                <a href="planpayment.html" class="aset">
+                  <p class="pset">
+                    <ion-icon name="documents-outline" size="large"></ion-icon>
+                  </p>
+                  <p>Plans and Payments</p>
+                </a>
+              </li>
+              <li class="setit">
+                <a href="#" class="aset">
+                  <p class="pset">
+                    <ion-icon
+                      name="color-palette-outline"
+                      size="large"
+                    ></ion-icon>
+                  </p>
+                  <p>Themes</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="adm" class="hideadm">
+          <p class="adtxt2">User Name <span class="spadm">Admin</span></p>
+          <div>
+            <ul class="setlst">
+              <li class="setit">
+                <a href="#" class="aset">
+                  <p class="pset">
+                    <ion-icon
+                      name="mail-unread-outline"
+                      size="large"
+                    ></ion-icon>
+                  </p>
+                  <p>Inbox</p>
+                </a>
+              </li>
+              <li class="setit">
+                <a href="#" class="aset">
+                  <p class="pset">
+                    <ion-icon name="person-outline" size="large"></ion-icon>
+                  </p>
+                  <p>Account</p>
+                </a>
+              </li>
+              <li class="setit">
+                <a href="login.html" class="aset">
+                  <p class="pset">
+                    <ion-icon name="log-out-outline" size="large"></ion-icon>
+                  </p>
+                  <p>Logout</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="content">
+          <div class="dash">User List</div>
+          <div class="tablebgr">
+            <p class="imasl">
+              <ion-icon name="people" size="large"></ion-icon>
+            </p>
+            <div class="tablehead">
+              <div class="lefthead">
+                <p class="ptot">Total: <span class="sixhundo">600</span></p>
+                <p class="pshow">show 25</p>
+              </div>
+              <div class="righthead">
+                <form action="" class="topfo"><input type="text" /></form>
+                <a href="#" class="sear"
+                  ><ion-icon name="search-outline" size="large"></ion-icon
+                ></a>
+                <a href=""
+                  ><ion-icon name="download-outline" size="large"></ion-icon
+                ></a>
+                <!-- <a href="" class="addbtnco"><ion-icon name="add-circle" size="large"></ion-icon></a> -->
+              </div>
+            </div>
+            <!-- table section -->
+            <div class="tabledv">
+              <table>
+                <thead>
+                  <tr class="trth">
+                    <th class="checth"><input type="checkbox" /></th>
+                    <th class="thal">
+                      <p>
+                        UserID <br />
+                        Name
+                      </p>
+                    </th>
+                    <th class="thal">
+                      <p>
+                        Company <br />
+                        Business
+                      </p>
+                    </th>
+                    <th class="thal"><p>User Role</p></th>
+                    <th class="thal">
+                      <p>
+                        Group <br />
+                        Users
+                      </p>
+                    </th>
+                    <th class="thal">
+                      <p>Register <br />Date & Time</p>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="table-body tablexp">
+                  <tr class="trrp trrptw trrpthr">
+                    <td><input type="checkbox" /></td>
+
+                    <td>
+                      <p><span>100600</span><br />SAW YE THWAY</p>
+                    </td>
+                    <td>
+                      <p>O-technique<br />Tobi</p>
+                    </td>
+                    <td><p>Administrator</p></td>
+                    <td>
+                      <p><span>2020-10-19</span><br />12:08</p>
+                    </td>
+                    <td class="frar">
+                      <span class="user-count">2</span>
+                      <span class="dropdown-arrowIcon"></span>
+                    </td>
+                  </tr>
+
+                  <tr class="trrp">
+                    <td class="expand-table" colspan="6">
+                      <div class="table-expend-div jdiv divextwo">
+                        <table class="expend-tb">
+                          <tbody>
+                            <tr>
+                              <td><input type="checkbox" /></td>
+
+                              <td>
+                                <p><span>100600</span><br />SAW YE THWAY</p>
+                              </td>
+                              <td>
+                                <p>O-technique<br />Tobi</p>
+                              </td>
+                              <td><p>Administrator</p></td>
+                              <td>
+                                <p><span>2020-10-19</span><br />12:08</p>
+                              </td>
+                              <td class="hide-text">Active Usersss</td>
+                            </tr>
+                            <tr>
+                              <td><input type="checkbox" /></td>
+
+                              <td>
+                                <p><span>100600</span><br />SAW YE THWAY</p>
+                              </td>
+                              <td>
+                                <p>O-technique<br />Tobi</p>
+                              </td>
+                              <td><p>Administrator</p></td>
+                              <td>
+                                <p><span>2020-10-19</span><br />12:08</p>
+                              </td>
+                              <td class="hide-text">Active Usersss</td>
+                            </tr>
+                            <tr>
+                              <td><input type="checkbox" /></td>
+
+                              <td>
+                                <p><span>100600</span><br />SAW YE THWAY</p>
+                              </td>
+                              <td>
+                                <p>O-technique<br />Tobi</p>
+                              </td>
+                              <td><p>Administrator</p></td>
+                              <td>
+                                <p><span>2020-10-19</span><br />12:08</p>
+                              </td>
+                              <td class="hide-text">Active Usersss</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="trrp trrptw trrpthr">
+                    <td><input type="checkbox" /></td>
+
+                    <td>
+                      <p><span>100600</span><br />SAW YE THWAY</p>
+                    </td>
+                    <td>
+                      <p>O-technique<br />Tobi</p>
+                    </td>
+                    <td><p>Administrator</p></td>
+                    <td>
+                      <p><span>2020-10-19</span><br />12:08</p>
+                    </td>
+                    <td class="frar">
+                      <span class="user-count">2</span>
+                      <span class="dropdown-arrowIcon-two"></span>
+                    </td>
+                  </tr>
+                  <tr class="trrp">
+                    <td class="expand-table" colspan="6">
+                      <div class="table-expend-div jdiv divextwo forjs">
+                        <table class="expend-tb">
+                          <tbody>
+                            <tr>
+                              <td><input type="checkbox" /></td>
+
+                              <td>
+                                <p><span>100600</span><br />SAW YE THWAY</p>
+                              </td>
+                              <td>
+                                <p>O-technique<br />Tobi</p>
+                              </td>
+                              <td><p>Administrator</p></td>
+                              <td>
+                                <p><span>2020-10-19</span><br />12:08</p>
+                              </td>
+                              <td class="hide-text">Active Usersss</td>
+                            </tr>
+                            <tr>
+                              <td><input type="checkbox" /></td>
+
+                              <td>
+                                <p><span>100600</span><br />SAW YE THWAY</p>
+                              </td>
+                              <td>
+                                <p>O-technique<br />Tobi</p>
+                              </td>
+                              <td><p>Administrator</p></td>
+                              <td>
+                                <p><span>2020-10-19</span><br />12:08</p>
+                              </td>
+                              <td class="hide-text">Active Usersss</td>
+                            </tr>
+                            <tr>
+                              <td><input type="checkbox" /></td>
+
+                              <td>
+                                <p><span>100600</span><br />SAW YE THWAY</p>
+                              </td>
+                              <td>
+                                <p>O-technique<br />Tobi</p>
+                              </td>
+                              <td><p>Administrator</p></td>
+                              <td>
+                                <p><span>2020-10-19</span><br />12:08</p>
+                              </td>
+                              <td class="hide-text">Active Usersss</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- end table -->
+              <!-- pager -->
+              <div class="pager">
+                <p class="numbot">1 - 10 of 25</p>
+                <div class="arrow">
+                  <a href=""
+                    ><ion-icon name="caret-back" size="small"></ion-icon
+                  ></a>
+                  <a href=""
+                    ><ion-icon name="chevron-back" size="small"></ion-icon
+                  ></a>
+                  <a href=""
+                    ><ion-icon name="chevron-forward" size="small"></ion-icon
+                  ></a>
+                  <a href=""
+                    ><ion-icon name="caret-forward" size="small"></ion-icon
+                  ></a>
+                </div>
+              </div>
+              <!-- end pager -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="comfo" class="hidefo">
+      <p class="mdf"></p>
+      <div class="fodi">
+        <p class="imasl">
+          <ion-icon name="people" size="large"></ion-icon>
+        </p>
+        <form action="" class="fofo">
+          <ul class="foul">
+            <li class="folia">
+              <p class="folip">Register Date</p>
+              <div class="fodith">
+                <input type="text" class="foin foout" />
+                <input type="text" class="foin foout" />
+              </div>
+            </li>
+            <li class="folia">
+              <p class="folip">ID</p>
+
+              <input type="text" class="foin" />
+            </li>
+            <li class="folia">
+              <p class="folip">Name</p>
+
+              <input type="text" class="foin" />
+            </li>
+            <li class="folia">
+              <p class="folip">Company</p>
+
+              <input type="text" class="foin" />
+            </li>
+            <li class="folia">
+              <p class="folip">Business Type</p>
+
+              <input type="text" class="foin" />
+            </li>
+            <li class="folia">
+              <p class="folip">Location</p>
+
+              <input type="text" class="foin" />
+            </li>
+            <li class="folia">
+              <p class="folip">User</p>
+
+              <input type="text" class="foin" />
+            </li>
+            <li class="folia">
+              <p class="folip">Plan</p>
+
+              <input type="text" class="foin" />
+            </li>
+            <li class="folia">
+              <p class="folip">Payment</p>
+
+              <input type="text" class="foin" />
+            </li>
+          </ul>
+        </form>
+      </div>
+      <div class="fobu">
+        <button class="resbu">Reset</button>
+        <button class="serbu">Search</button>
+      </div>
+      <a href="#" class="clobtn">
+        <ion-icon name="close-outline" size="large"></ion-icon>
+      </a>
+    </div>
+    <div class="hbg"></div>
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

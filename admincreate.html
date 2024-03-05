@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css">
+    <!-- <script src="node_modules/chart.js/dist/chart.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>ABCD</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar mobile-sideBar">
+        <div class="side">
+          <div class="head">
+            <p class="logo">
+              <img
+                src="img/kenkokanri-admin-mark.png"
+                alt="company logo"
+                class="logoimage"
+              />
+            </p>
+            <p class="headtwo">
+              <img
+                src="img/kenkokanri-admin-text.png"
+                alt="logo name"
+                class="imagename"
+              />
+            </p>
+          </div>
+          <nav class="sidenav">
+            <ul>
+              <li class="sidename">
+                <a href="index.html" class="sidelink active">
+                  <p class="tabicon">
+                    <ion-icon name="grid-outline" size="small"></ion-icon>
+                  </p>
+                  <p class="tablinkname">Dashboard</p>
+                </a>
+              </li>
+              <li class="sidename checknav-width">
+                <a href="company.html" class="sidelinkcompany">
+                  <p class="tabicon">
+                    <ion-icon name="business-outline" size="small"></ion-icon>
+                  </p>
+                  <p class="tablinkname">Company</p>
+                </a>
+                <ul class="sub-company">
+                  <li class="subcomli">
+                    <a href="userlist.html" class="userlink">
+                      <p class="forline remove-sub"></p>
+                      <p class="sideuserlist rmtext">User List</p>
+                    </a>
+                  </li>
+                  <li class="subcomli">
+                    <a href="accesslog.html" class="userlink2">
+                      <p class="forline2 remove-sub2"></p>
+                      <p class="sideuserlist rmtext">Access Log</p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="sidebar-hover-pointer point">
+                  <li class="hover-li jli">
+                    <a href="company.html" class="sidebar-li-a"> Company </a>
+                  </li>
+                  <li class="hover-li">
+                    <a href="userlist.html" class="sidebar-li-aUserList">
+                      User List</a
+                    >
+                  </li>
+                  <li class="hover-li">
+                    <a href="accesslog.html" class="sidebar-li-aAccessLog">
+                      Access Log
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sidename">
+                <a href="paymentlist.html" class="sidelink2">
+                  <p class="tabicon">
+                    <ion-icon name="card-outline" size="small"></ion-icon></ion-icon>
+                  </p>
+                  <p class="tablinkname">Payment List</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="rightside">
+        <div class="topbar">
+          <div class="topleft">
+            <a href="#" class="sidebtn"
+              ><ion-icon
+                name="reorder-three-outline"
+                size="large"
+                class="topa"
+              ></ion-icon
+            ></a>
+            <a href="#" class="sidebtn2"
+            ><ion-icon
+              name="reorder-three-outline"
+              size="large"
+              class="topa"
+            ></ion-icon
+          ></a>
+            <a href="#" class="topadmin">Admin</a>
+          </div>
+          <div>
+            <ul class="torig">
+              <li class="firli">
+                test
+                <a href="#" class="bfcon"
+                  ><ion-icon
+                    name="notifications-outline"
+                    size="large"
+                    class="topa"
+                  ></ion-icon
+                ></a>
+              </li>
+              <li class="firli">
+                test
+                <a href="#" class="seta"
+                  ><ion-icon
+                    name="settings-outline"
+                    size="large"
+                    class="topa"
+                  ></ion-icon
+                ></a>
+              </li>
+              <li class="firli">
+                <a href="#" class="rimo">
+                  <p class="unnh">
+                    User Name
+                    <span class="sadmp">Admin</span>
+                  </p>
+                  <p class="pim">
+                    <img src="img/dammy1.jpg" alt="profile photo" />
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="notio" id="notii">
+          <p class="notiex">Notifications</p>
+        </div>
+        <div id="topset" class="showset">
+          <p class="adtxt">Admin Setting</p>
+          <div>
+            <ul class="setlst">
+              <li class="setit">
+                <a href="adminlist.html" class="aset">
+                  <p class="pset">
+                    <ion-icon
+                      name="people-circle-outline"
+                      size="large"
+                    ></ion-icon>
+                  </p>
+                  <p>System Admin Lists</p>
+                </a>
+              </li>
+              <li class="setit">
+                <a href="planpayment.html" class="aset">
+                  <p class="pset">
+                    <ion-icon name="documents-outline" size="large"></ion-icon>
+                  </p>
+                  <p>Plans and Payments</p>
+                </a>
+              </li>
+              <li class="setit">
+                <a href="#" class="aset">
+                  <p class="pset">
+                    <ion-icon
+                      name="color-palette-outline"
+                      size="large"
+                    ></ion-icon>
+                  </p>
+                  <p>Themes</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="adm" class="hideadm">
+          <p class="adtxt2">User Name <span class="spadm">Admin</span></p>
+          <div>
+            <ul class="setlst">
+              <li class="setit">
+                <a href="#" class="aset">
+                  <p class="pset">
+                    <ion-icon
+                      name="mail-unread-outline"
+                      size="large"
+                    ></ion-icon>
+                  </p>
+                  <p>Inbox</p>
+                </a>
+              </li>
+              <li class="setit">
+                <a href="#" class="aset">
+                  <p class="pset">
+                    <ion-icon name="person-outline" size="large"></ion-icon>
+                  </p>
+                  <p>Account</p>
+                </a>
+              </li>
+              <li class="setit">
+                <a href="login.html" class="aset">
+                  <p class="pset">
+                    <ion-icon name="log-out-outline" size="large"></ion-icon>
+                  </p>
+                  <p>Logout</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="plancontent">
+          <div class="headeradmin">Admin Create</div>
+          <div class="adminsubdiv adminside">
+            <p class="admindiv-p">
+              <ion-icon name="newspaper-outline" size="large"></ion-icon>
+            </p>
+            <div class="alladminsite">
+              <div class="subadminsite">
+                <div class="basictab">
+                  <ul class="basicul">
+                    <li class="tab1 tab2 switab">
+                      <a href="#" class="linkbasic">Basic Info</a>
+                    </li>
+                    <li class="tab1 switab">
+                      <a href="#" class="linkbasic2">Permission</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="adminform">
+                  <div class="admindiv1 admindivjs">
+                    <form action="">
+                      <ul>
+                        <li class="admincreateli">
+                          <p class="admin-lip">First Name</p>
+                          <input type="text" class="admininput">
+                        </li>
+                        <li class="admincreateli">
+                          <p class="admin-lip">Last Name</p>
+                          <input type="text" class="admininput">
+                        </li>
+                        <li class="admincreateli">
+                          <p class="admin-lip">Job Title</p>
+                          <input type="text" class="admininput">
+                        </li>
+                        <li class="admincreateli">
+                          <p class="admin-lip">Company</p>
+                          <input type="text" class="admininput">
+                        </li>
+                        <li class="admincreateli">
+                          <p class="admin-lip">E-mail</p>
+                          <input type="text" class="admininput">
+                        </li>
+                        <li class="admincreateli">
+                          <p class="admin-lip">Phone</p>
+                          <input type="text" class="admininput">
+                        </li>
+                      </ul>
+                    </form>
+                  </div>
+                  <div class="admindivtwo admindivjs admindiv2">
+                    <table class="admintable">
+                      <thead>
+                        <tr>
+                          <th class="adminth"></th>
+                          <th class="adminth">View Detail</th>
+                          <th class="adminth">Edit</th>
+                          <th class="adminth">Add</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="admintdfc">Admin List</td>
+                          <td class="admintd"><input type="checkbox"></td>
+                          <td class="admintd"><input type="checkbox"></td>
+                          <td class="admintd"><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                          <td class="admintdfc">Customer<br>Company</td>
+                          <td class="admintd"><input type="checkbox"></td>
+                          <td class="admintd"><input type="checkbox"></td>
+                          <td class="admintd"><input type="checkbox"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="photodiv">
+                <div class="phototop">
+                  <div class="photoimg"></div>
+                  <button class="addphoto">Add Photo</button>
+                </div>
+                <div class="photobottom">
+                  <p class="photodetail">
+                    <span class="photospan">Account</span>
+                    <a href="#"><ion-icon name="create-outline" size="small"></ion-icon></a>
+                  </p>
+                  <form action="" class="photoform">
+                    <ul>
+                      <li class="photoli">
+                        <ion-icon name="mail-sharp" size="small"></ion-icon>
+                        <div class="photoidiv">
+                          <input type="text" placeholder="Email..." class="photoinput">
+                          <span class="photospan"></span>
+                        </div>
+                      </li>
+                      <li class="photoli">
+                        <ion-icon name="lock-closed-outline" size="small"></ion-icon>
+                        <div class="photoidiv">
+                          <input type="password" placeholder="Password..." class="photoinput">
+                          <span class="photospan"></span>
+                        </div>
+                      </li>
+                    </ul>
+                  </form>
+                </div>
+              </div>
+              <div class="bottom-section">
+                <button class="cancel-for-companyCreate">Cancel</button>
+                <button class="registerBtn-companyCreate">Register</button>
+              </div> 
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="hbg"></div>
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

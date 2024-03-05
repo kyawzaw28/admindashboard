@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css">
+    <title>ABCD</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar mobile-sideBar">
+        <div class="side">
+          <div class="head">
+            <p class="logo">
+              <img
+                src="img/kenkokanri-admin-mark.png"
+                alt="company logo"
+                class="logoimage"
+              />
+            </p>
+            <p class="headtwo">
+              <img
+                src="img/kenkokanri-admin-text.png"
+                alt="logo name"
+                class="imagename"
+              />
+            </p>
+          </div>
+          <nav class="sidenav">
+            <ul>
+              <li class="sidename">
+                <a href="index.html" class="sidelink active">
+                  <p class="tabicon">
+                    <ion-icon name="grid-outline" size="small"></ion-icon>
+                  </p>
+                  <p class="tablinkname">Dashboard</p>
+                </a>
+              </li>
+              <li class="sidename checknav-width">
+                <a href="company.html" class="sidelinkcompany">
+                  <p class="tabicon">
+                    <ion-icon name="business-outline" size="small"></ion-icon>
+                  </p>
+                  <p class="tablinkname">Company</p>
+                </a>
+                <ul class="sub-company">
+                  <li class="subcomli">
+                    <a href="userlist.html" class="userlink">
+                      <p class="forline remove-sub"></p>
+                      <p class="sideuserlist rmtext">User List</p>
+                    </a>
+                  </li>
+                  <li class="subcomli">
+                    <a href="accesslog.html" class="userlink2">
+                      <p class="forline2 remove-sub2"></p>
+                      <p class="sideuserlist rmtext">Access Log</p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="sidebar-hover-pointer point">
+                  <li class="hover-li jli">
+                    <a href="company.html" class="sidebar-li-a"> Company </a>
+                  </li>
+                  <li class="hover-li">
+                    <a href="userlist.html" class="sidebar-li-aUserList">
+                      User List</a
+                    >
+                  </li>
+                  <li class="hover-li">
+                    <a href="accesslog.html" class="sidebar-li-aAccessLog">
+                      Access Log
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sidename">
+                <a href="paymentlist.html" class="sidelink2">
+                  <p class="tabicon">
+                    <ion-icon name="card-outline" size="small"></ion-icon></ion-icon>
+                  </p>
+                  <p class="tablinkname">Payment List</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="rightside">
+        <div class="topbar">
+          <div class="topleft">
+            <a href="#" class="sidebtn"
+              ><ion-icon
+                name="reorder-three-outline"
+                size="large"
+                class="topa"
+              ></ion-icon
+            ></a>
+            <a href="#" class="sidebtn2"
+            ><ion-icon
+              name="reorder-three-outline"
+              size="large"
+              class="topa"
+            ></ion-icon
+          ></a>
+            <a href="#" class="topadmin">Admin</a>
+          </div>
+          <div>
+            <ul class="torig">
+              <li class="firli">
+                test
+                <a href="#" class="bfcon"
+                  ><ion-icon
+                    name="notifications-outline"
+                    
+                    class="topa"
+                  ></ion-icon
+                ></a>
+              </li>
+              <li class="firli">
+                test
+                <a href="#" class="seta"
+                  ><ion-icon
+                    name="settings-outline"
+                    
+                    class="topa"
+                  ></ion-icon
+                ></a>
+              </li>
+              <li class="firli">
+                <a href="#" class="rimo">
+                  <p class="unnh">
+                    User Name
+                    <span class="sadmp">Admin</span>
+                  </p>
+                  <p class="pim">
+                    <img src="img/dammy1.jpg" alt="profile photo" />
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="notio" id="notii">
+          <p class="notiex">Notifications</p>
+        </div>
+        <div id="topset" class="showset">
+          <p class="adtxt">Admin Setting</p>
+          <div>
+            <ul class="setlst">
+              <li class="setit">
+                <a href="adminlist.html" class="aset">
+                  <p class="pset">
+                    <ion-icon
+                      name="people-circle-outline"
+                      size="large"
+                    ></ion-icon>
+                  </p>
+                  <p>System Admin Lists</p>
+                </a>
+              </li>
+              <li class="setit">
+                <a href="planpayment.html" class="aset">
+                  <p class="pset">
+                    <ion-icon name="documents-outline" size="large"></ion-icon>
+                  </p>
+                  <p>Plans and Payments</p>
+                </a>
+              </li>
+              <li class="setit">
+                <a href="#" class="aset">
+                  <p class="pset">
+                    <ion-icon
+                      name="color-palette-outline"
+                      size="large"
+                    ></ion-icon>
+                  </p>
+                  <p>Themes</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="adm" class="hideadm">
+          <p class="adtxt2">User Name <span class="spadm">Admin</span></p>
+          <div>
+            <ul class="setlst">
+              <li class="setit">
+                <a href="#" class="aset">
+                  <p class="pset">
+                    <ion-icon
+                      name="mail-unread-outline"
+                      size="large"
+                    ></ion-icon>
+                  </p>
+                  <p>Inbox</p>
+                </a>
+              </li>
+              <li class="setit">
+                <a href="#" class="aset">
+                  <p class="pset">
+                    <ion-icon name="person-outline" size="large"></ion-icon>
+                  </p>
+                  <p>Account</p>
+                </a>
+              </li>
+              <li class="setit">
+                <a href="login.html" class="aset">
+                  <p class="pset">
+                    <ion-icon name="log-out-outline" size="large"></ion-icon>
+                  </p>
+                  <p>Logout</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="content">
+          <div class="dash">Dashboard</div>
+          <div class="firstrowbox">
+            <div class="box1">
+              <p class="htpo">
+                <ion-icon name="cash-sharp" size="large"></ion-icon>
+              </p>
+              <div class="fbofsa">
+                <span class="sa">Sales</span
+                ><span class="ydol">¥ 30,000,000</span>
+              </div>
+              <div class="otba">
+                <p class="tol">
+                  <ion-icon name="time-outline" size="small"></ion-icon>
+                </p>
+                <p class="ju">Just Update</p>
+              </div>
+            </div>
+            <div class="box1">
+              <p class="htpo2">
+                <ion-icon name="tv-sharp" size="large"></ion-icon>
+              </p>
+              <div class="fbofsa">
+                <span class="sa">Visits</span><span class="ydol">34,245</span>
+              </div>
+              <div class="otba">
+                <p class="tol">
+                  <ion-icon name="time-outline" size="small"></ion-icon>
+                </p>
+                <p class="ju">Just Update</p>
+              </div>
+            </div>
+            <div class="box1">
+              <p class="htpo3">
+                <ion-icon name="pie-chart-sharp" size="large"></ion-icon>
+              </p>
+              <div class="fbofsa">
+                <span class="sa">Registered</span><span class="ydol">245</span>
+              </div>
+              <div class="otba">
+                <p class="tol">
+                  <ion-icon name="time-outline" size="small"></ion-icon>
+                </p>
+                <p class="ju">Just Update</p>
+              </div>
+            </div>
+            <div class="box1">
+              <p class="htpo4">
+                <ion-icon name="bar-chart-sharp" size="large"></ion-icon>
+              </p>
+              <div class="fbofsa">
+                <span class="sa">Followers</span><span class="ydol">+ 187</span>
+              </div>
+              <div class="otba">
+                <p class="tol">
+                  <ion-icon name="time-outline" size="small"></ion-icon>
+                </p>
+                <p class="ju">Just Update</p>
+              </div>
+            </div>
+          </div>
+          <div class="secondrowbox">
+            <div class="box2">
+              <div class="ch1">
+                
+                <!-- <img src="img/chart1.png" alt="chart" /> -->
+                <canvas id="myChart1" class="can1"></canvas>
+              
+              </div>
+              <div class="chouse">
+                <span class="dss">Daily Sales</span>
+                <p class="iits">
+                  <span class="pe5">↑55%</span>increase in tody sales
+                </p>
+              </div>
+              <div class="otba2">
+                <p class="tol">
+                  <ion-icon name="time-outline" size="small"></ion-icon>
+                </p>
+                <p class="ju">Updated 4 minutes ago</p>
+              </div>
+            </div>
+            <div class="box2">
+              <div class="ch2">
+                <!-- <img src="img/chart2.png" alt="chart" /> -->
+                <canvas id="myChart2"></canvas>
+              </div>
+              <div class="chouse">
+                <span class="dss">Daily Visit</span>
+                <p class="iits">
+                  <span class="pe5">↑55%</span>increase in tody sales
+                </p>
+              </div>
+              <div class="otba2">
+                <p class="tol">
+                  <ion-icon name="time-outline" size="small"></ion-icon>
+                </p>
+                <p class="ju">Updated 4 minutes ago</p>
+              </div>
+            </div>
+            <div class="box2">
+              <div class="ch3">
+                <canvas id="myChart3"></canvas>
+              </div>
+              <div class="chouse">
+                <span class="dss">Compared Registered</span>
+                <p class="iits">
+                  <span class="pe5">↑55%</span>increase in tody sales
+                </p>
+              </div>
+              <div class="otba2">
+                <p class="tol">
+                  <ion-icon name="time-outline" size="small"></ion-icon>
+                </p>
+                <p class="ju">Updated 4 minutes ago</p>
+              </div>
+            </div>
+          </div>
+          <div class="thirdrowbox">
+            <div class="box3">
+              <p class="thhtpo">
+                <ion-icon name="logo-facebook" size="large"></ion-icon>
+              </p>
+              <div class="fbofsa">
+                <span class="sa">Followers</span><span class="ydol">+245</span>
+              </div>
+              <div class="otba">
+                <p class="tol">
+                  <ion-icon name="time-outline" size="small"></ion-icon>
+                </p>
+                <p class="ju">Just Update</p>
+              </div>
+            </div>
+            <div class="box3">
+              <p class="thhtpo2">
+                <ion-icon name="logo-instagram" size="large"></ion-icon>
+              </p>
+              <div class="fbofsa">
+                <span class="sa">Followers</span><span class="ydol">+245</span>
+              </div>
+              <div class="otba">
+                <p class="tol">
+                  <ion-icon name="time-outline" size="small"></ion-icon>
+                </p>
+                <p class="ju">Just Update</p>
+              </div>
+            </div>
+            <div class="box3">
+              <p class="thhtpo3">
+                <ion-icon name="logo-twitter" size="large"></ion-icon>
+              </p>
+              <div class="fbofsa">
+                <span class="sa">Followers</span><span class="ydol">+245</span>
+              </div>
+              <div class="otba">
+                <p class="tol">
+                  <ion-icon name="time-outline" size="small"></ion-icon>
+                </p>
+                <p class="ju">Just Update</p>
+              </div>
+            </div>
+          </div>
+          <div class="fourthrowbox">
+            <div class="box4">
+              <div>
+                <p class="htpobo4">
+                  <ion-icon name="globe-outline" size="large"></ion-icon>
+                </p>
+                <p class="bu">Browser Usage</p>
+              </div>
+              <ul class="osl">
+                <li class="lio">
+                  <span class="sp1"><input type="checkbox" /></span
+                  ><span class="sp2">Chrome</span><span class="sp3">2920</span
+                  ><span class="sp4">53.5%</span>
+                </li>
+                <li class="lio">
+                  <span class="sp1"><input type="checkbox" /></span
+                  ><span class="sp2">Safari</span><span class="sp3">1,832</span
+                  ><span class="sp4">20.43% </span>
+                </li>
+                <li class="lio">
+                  <span class="sp1"><input type="checkbox" /></span
+                  ><span class="sp2">Firefox</span><span class="sp3">760</span
+                  ><span class="sp4">10.35%</span>
+                </li>
+                <li class="lio">
+                  <span class="sp1"><input type="checkbox" /></span
+                  ><span class="sp2">IE</span><span class="sp3">690</span
+                  ><span class="sp4">7.87%</span>
+                </li>
+                <li class="lio">
+                  <span class="sp1"><input type="checkbox" /></span
+                  ><span class="sp2">Edge </span><span class="sp3">600</span
+                  ><span class="sp4">5.93%</span>
+                </li>
+              </ul>
+            </div>
+            <div class="box4">
+              <div>
+                <p class="htpobo42">
+                  <ion-icon
+                    name="phone-portrait-outline"
+                    size="large"
+                  ></ion-icon>
+                </p>
+                <p class="bu">Device Usage</p>
+              </div>
+              <div class="las">
+                <ul class="laul">
+                  <li class="lsl">
+                    <span class="lassp"></span><span class="lste">PC</span>
+                  </li>
+                  <li class="lsl">
+                    <span class="lassp2"></span><span class="lste">Laptop</span>
+                  </li>
+                  <li class="lsl">
+                    <span class="lassp3"></span><span class="lste">Tablet</span>
+                  </li>
+                  <li class="lsl">
+                    <span class="lassp4"></span><span class="lste">Mobile</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="piechat">
+                <!-- <img src="img/chart4.png" alt="Pie Graph"> -->
+                <canvas id="myChart4"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+    <div class="hbg"></div>
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+      const ctx4 = document.getElementById('myChart4');
+      const ctx1 = document.getElementById('myChart1');
+      const ctx2 = document.getElementById('myChart2');
+      const ctx3 = document.getElementById('myChart3');
+    
+      new Chart(ctx4, {
+        type: 'pie',
+        data: {
+          // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+          datasets: [{
+            label: '# of Votes',
+            // data: [12, 19, 3, 5, 2, 3],
+            data: [12, 16, 7, 3],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          legend: {
+            display: false
+         },
+         tooltips: {
+            enabled: false
+         }
+          // scales: {
+          //   y: {
+          //     beginAtZero: true
+          //   }
+          // }
+        }
+      });
+
+      new Chart(ctx1, {
+        type: 'bar',
+        data: {
+          labels: ['J','F','M','A','M','J','J','A','S'],
+          datasets: [{
+            label: 'Sales',
+            data: [12, 19, 3, 5, 2, 3, 4, 6, 8],
+            backgroundColor: [
+            ' rgb(255, 255, 255)',
+            ' rgb(255, 255, 255)',
+            ' rgb(255, 255, 255)',
+            ' rgb(255, 255, 255)',
+            ' rgb(255, 255, 255)',
+            ' rgb(255, 255, 255)',
+            ' rgb(255, 255, 255)',
+            ' rgb(255, 255, 255)',
+            ' rgb(255, 255, 255)',
+        ],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          reponsive: true,
+	        maintainAspectRatio: false,
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+      new Chart(ctx2, {
+        type: 'line',
+        data: {
+          labels: ['M','T','W','T','F','S','S'],
+          datasets: [{
+            label: 'Visit',
+            data: [12, 19, 3, 5, 2, 3, 4],
+            borderColor: 'rgba(255, 255, 255, 1)',
+            backgroundColor: [
+            ' rgb(255, 255, 255)',
+            ' rgb(255, 255, 255)',
+            ' rgb(255, 255, 255)',
+            ' rgb(255, 255, 255)',
+            ' rgb(255, 255, 255)',
+            ' rgb(255, 255, 255)',
+            ' rgb(255, 255, 255)',
+            ' rgb(255, 255, 255)',
+            ' rgb(255, 255, 255)',
+        ],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          reponsive: true,
+	maintainAspectRatio: false,
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+      new Chart(ctx3, {
+        type: 'line',
+        data: {
+          labels: ['M','T','W','T','F','S','S'],
+          datasets: [{
+            label: 'Registered',
+            data: [15, 12, 3, 5, 16, 2, 17],
+            borderColor: 'rgba(255, 255, 255, 1)',
+            backgroundColor: [
+            ' rgb(255, 255, 255)',
+            ' rgb(255, 255, 255)',
+            ' rgb(255, 255, 255)',
+            ' rgb(255, 255, 255)',
+            ' rgb(255, 255, 255)',
+            ' rgb(255, 255, 255)',
+            ' rgb(255, 255, 255)',
+            ' rgb(255, 255, 255)',
+            ' rgb(255, 255, 255)',
+        ],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          reponsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    </script>
+     
+  </body>
+</html>
